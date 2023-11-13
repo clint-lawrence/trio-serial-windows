@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools-scm>=7.1"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project]
+name = "trio-serial-windows"
+dynamic = ["version"]
+description = "Serial Port support for python-trio on Windows"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "trio-serial",
+    "trio",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "trio_serial_windows.__version__"}
+
+[tool.pytest.ini_options]
+trio_mode = true
