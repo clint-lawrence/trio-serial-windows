@@ -15,6 +15,9 @@ dependencies = [
     "trio",
 ]
 
+[project.urls]
+"Homepage" = "https://github.com/clint-lawrence/trio-serial-windows"
+
 [tool.setuptools.dynamic]
 version = {attr = "trio_serial_windows.__version__"}
 

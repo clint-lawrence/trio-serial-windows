@@ -25,7 +25,7 @@ Parity = sys.modules["trio_serial.abstract"].Parity
 StopBits = sys.modules["trio_serial.abstract"].StopBits
 del sys
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 SerialStream: Type[AbstractSerialStream]
 
